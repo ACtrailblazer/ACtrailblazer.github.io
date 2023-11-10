@@ -13,7 +13,14 @@ custom_js:
 
 # Example including vega-lite
 
-Example comes from this [great blog post right here](https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html) that was also used in [our test import script](https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/blob/main/week01/test_imports_week01.ipynb).
+### Plot 1: Total floors and Floors Above Grade
+
+<vegachart schema-url="{{ site.baseurl }}/assets/json/Total_Floors_Above_Grade.json" style="width: 100%"></vegachart>
+
+### Write-up 
+
+In this visualization, I am taking the building inventory dataset and trying to show how the amount of floors above grade changes as the number of total floors changes. There seems to be a pretty linear line/relationship between the two as expected. For this visualization, I used X and Y encoding to set the X and Y axis of the plot and used color encoding/a color scheme redyellowgreen. I selected this color scheme in order to help visualize the number of floors above grade rising. Typically you think of red as bad/low and green as good/high and that was the reasoning behind my color choice here. Behind the scenes I did some data cleaning by getting rid of the zeros in the: Square Footage, Year Acquired, and Year Constructed columns as well as disabled the max rows limitation so that I was able to capture all of the data in my visualization.
+
 
 We can use a vegachart HTML tag like so:
 
