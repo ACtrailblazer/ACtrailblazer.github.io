@@ -1,5 +1,5 @@
 ---
-name: HW 8
+name: Homework 8 Project
 tools: [Python, HTML, vega-lite]
 image: assets/pngs/cars.png
 description: This is a homework project that I worked on!
